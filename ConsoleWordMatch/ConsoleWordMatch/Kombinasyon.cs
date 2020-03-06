@@ -5,12 +5,6 @@ namespace ConsoleWordMatch
 {
     public class Kombinasyon
     {
-        public List<string> HarfTane_AnlamsizKelimeOlustur(string[] tempYirmiBes)
-        {
-            List<string> temp = new List<string>();
-
-            return temp;
-        }
         public List<string> HarfTane_AnlamsizKelimeOlustur(string tempSekizli)
         {
             List<string> temp = new List<string>() { tempSekizli };
