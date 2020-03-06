@@ -16,27 +16,27 @@ namespace ConsoleWordMatch
             var yedi = basamak.YediAltiBesDortUcListesi(sekiz);
             basamak.Yazdir(yedi);
 
-            //var alti = basamak.YediAltiBesDortUcListesi(yedi);
-            //basamak.Yazdir(alti);
+            var alti = basamak.YediAltiBesDortUcListesi(yedi);
+            basamak.Yazdir(alti);
 
-            //var bes = basamak.YediAltiBesDortUcListesi(alti);
-            //basamak.Yazdir(bes);
+            var bes = basamak.YediAltiBesDortUcListesi(alti);
+            basamak.Yazdir(bes);
 
-            //var dort = basamak.YediAltiBesDortUcListesi(bes);
-            //basamak.Yazdir(dort);
+            var dort = basamak.YediAltiBesDortUcListesi(bes);
+            basamak.Yazdir(dort);
 
-            //var uc = basamak.YediAltiBesDortUcListesi(dort);
-            //basamak.Yazdir(uc);
+            var uc = basamak.YediAltiBesDortUcListesi(dort);
+            basamak.Yazdir(uc);
 
-            //var iki = basamak.YediAltiBesDortUcListesi(uc);
-            //basamak.Yazdir(iki);
+            var iki = basamak.YediAltiBesDortUcListesi(uc);
+            basamak.Yazdir(iki);
 
             Jokerler jokerler = new Jokerler();
             //var sekizkombin = jokerler.Jokerli_AnlamsizKelimeOlustur(sekiz);
             //jokerler.Yazdir(sekizkombin);
 
-            var yedicombin = jokerler.Jokerli_AnlamsizKelimeOlustur(yedi);
-            jokerler.Yazdir(yedicombin);
+            var temp = jokerler.Jokerli_AnlamsizKelimeOlustur(iki);
+            jokerler.Yazdir(temp);
             Console.Read();
         }
     }
