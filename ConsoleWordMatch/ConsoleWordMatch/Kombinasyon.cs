@@ -27,7 +27,7 @@ namespace ConsoleWordMatch
                 {
                     tempString += item.ToString();
                 }
-                
+                tempCharDizisi = tempString.ToCharArray();
                 temp.Add(tempString);
             }
             return temp;

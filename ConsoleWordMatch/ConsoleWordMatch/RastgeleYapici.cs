@@ -12,7 +12,7 @@ namespace ConsoleWordMatch
         string[] harfler = Alfabe.harfler_dizisi;
         
         //------------------------------------------------------
-        public string[] HarfTane_AnlamsizKelimeOlustur(string tempSekiz)
+        public string[] Jokerli_AnlamsizKelimeOlustur(string tempSekiz)
         {
             string[] temp = new string[harfler.Length];
             int say = 0;
@@ -24,10 +24,10 @@ namespace ConsoleWordMatch
 
             return temp;
         }
-        public string[] HarfTane_AnlamsizKelimeOlustur()
+        public string[] Jokerli_AnlamsizKelimeOlustur()
         {
             string tempSekiz = SekizTane_HarfOlustur();
-            return HarfTane_AnlamsizKelimeOlustur(tempSekiz);
+            return Jokerli_AnlamsizKelimeOlustur(tempSekiz);
         }
         //------------------------------------------------------
         public string SekizTane_HarfOlustur()

@@ -11,7 +11,7 @@ namespace ConsoleWordMatch
         static void Main(string[] args)
         {
             RastgeleYapici rastgeleYapici = new RastgeleYapici();
-            var harfler = rastgeleYapici.HarfTane_AnlamsizKelimeOlustur();
+            var harfler = rastgeleYapici.Jokerli_AnlamsizKelimeOlustur();
             //rastgeleYapici.Yazdir(harfler);
 
             //---------------------------------------------------------------
