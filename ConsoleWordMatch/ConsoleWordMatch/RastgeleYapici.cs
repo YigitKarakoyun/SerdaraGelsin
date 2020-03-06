@@ -11,24 +11,7 @@ namespace ConsoleWordMatch
         Random rastgele = new Random();
         string[] harfler = Alfabe.harfler_dizisi;
         
-        //------------------------------------------------------
-        public string[] Jokerli_AnlamsizKelimeOlustur(string tempSekiz)
-        {
-            string[] temp = new string[harfler.Length];
-            int say = 0;
-            foreach (string item in harfler)
-            {
-                string yeniString = item + tempSekiz;
-                temp[say++] = (yeniString);
-            }
-
-            return temp;
-        }
-        public string[] Jokerli_AnlamsizKelimeOlustur()
-        {
-            string tempSekiz = SekizTane_HarfOlustur();
-            return Jokerli_AnlamsizKelimeOlustur(tempSekiz);
-        }
+        
         //------------------------------------------------------
         public string SekizTane_HarfOlustur()
         {
@@ -54,7 +37,7 @@ namespace ConsoleWordMatch
             Console.WriteLine("---Harfler---");
             foreach (var item in harfler)
             {
-                Console.Write(item+" ");
+                Console.Write(item);
             }
             Console.WriteLine();
             Console.WriteLine();

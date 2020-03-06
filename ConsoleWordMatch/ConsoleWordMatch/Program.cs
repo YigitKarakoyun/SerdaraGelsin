@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleWordMatch
 {
@@ -11,16 +7,38 @@ namespace ConsoleWordMatch
         static void Main(string[] args)
         {
             RastgeleYapici rastgeleYapici = new RastgeleYapici();
-            var harfler = rastgeleYapici.Jokerli_AnlamsizKelimeOlustur();
-            rastgeleYapici.Yazdir(harfler);
+            var sekiz = rastgeleYapici.SekizTane_HarfOlustur();
+            rastgeleYapici.Yazdir(sekiz);
 
-            //---------------------------------------------------------------
-            //Kombinasyon kombinasyon = new Kombinasyon();
-            //var harf = harfler[0];
-            //var sonucListesi = kombinasyon.HarfTane_AnlamsizKelimeOlustur(harf);
-            //kombinasyon.Yazdir(sonucListesi);
+
+            BasamakBasamak basamak = new BasamakBasamak();
+
+            var yedi = basamak.YediAltiBesDortUcListesi(sekiz);
+            basamak.Yazdir(yedi);
+
+            //var alti = basamak.YediAltiBesDortUcListesi(yedi);
+            //basamak.Yazdir(alti);
+
+            //var bes = basamak.YediAltiBesDortUcListesi(alti);
+            //basamak.Yazdir(bes);
+
+            //var dort = basamak.YediAltiBesDortUcListesi(bes);
+            //basamak.Yazdir(dort);
+
+            //var uc = basamak.YediAltiBesDortUcListesi(dort);
+            //basamak.Yazdir(uc);
+
+            //var iki = basamak.YediAltiBesDortUcListesi(uc);
+            //basamak.Yazdir(iki);
+
+            Jokerler jokerler = new Jokerler();
+            //var sekizkombin = jokerler.Jokerli_AnlamsizKelimeOlustur(sekiz);
+            //jokerler.Yazdir(sekizkombin);
+
+            var yedicombin = jokerler.Jokerli_AnlamsizKelimeOlustur(yedi);
+            jokerler.Yazdir(yedicombin);
             Console.Read();
         }
     }
-    
+
 }
