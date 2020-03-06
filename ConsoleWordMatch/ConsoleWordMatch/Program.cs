@@ -12,13 +12,13 @@ namespace ConsoleWordMatch
         {
             RastgeleYapici rastgeleYapici = new RastgeleYapici();
             var harfler = rastgeleYapici.Jokerli_AnlamsizKelimeOlustur();
-            //rastgeleYapici.Yazdir(harfler);
+            rastgeleYapici.Yazdir(harfler);
 
             //---------------------------------------------------------------
-            Kombinasyon kombinasyon = new Kombinasyon();
-            var harf = harfler[0];
-            var sonucListesi = kombinasyon.HarfTane_AnlamsizKelimeOlustur(harf);
-            kombinasyon.Yazdir(sonucListesi);
+            //Kombinasyon kombinasyon = new Kombinasyon();
+            //var harf = harfler[0];
+            //var sonucListesi = kombinasyon.HarfTane_AnlamsizKelimeOlustur(harf);
+            //kombinasyon.Yazdir(sonucListesi);
             Console.Read();
         }
     }
