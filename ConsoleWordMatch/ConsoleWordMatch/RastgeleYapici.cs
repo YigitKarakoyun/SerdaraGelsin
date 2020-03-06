@@ -10,29 +10,24 @@ namespace ConsoleWordMatch
     {
         Random rastgele = new Random();
         string[] harfler = Alfabe.harfler_dizisi;
+        
         //------------------------------------------------------
-        public List<string> HarfTane_AnlamsizKelimeOlustur2()
+        public string[] HarfTane_AnlamsizKelimeOlustur(string tempSekiz)
         {
-            var tempYirmiBes = HarfTane_AnlamsizKelimeOlustur();
-
-            List<string> temp = new List<string>();
-
-            return temp;
-        }
-        //------------------------------------------------------
-        public string[] HarfTane_AnlamsizKelimeOlustur()
-        {
-            string tempSekiz = SekizTane_HarfOlustur();
-
             string[] temp = new string[harfler.Length];
             int say = 0;
             foreach (string item in harfler)
             {
                 string yeniString = item + tempSekiz;
-                temp[say++]=(yeniString);
+                temp[say++] = (yeniString);
             }
-                    
+
             return temp;
+        }
+        public string[] HarfTane_AnlamsizKelimeOlustur()
+        {
+            string tempSekiz = SekizTane_HarfOlustur();
+            return HarfTane_AnlamsizKelimeOlustur(tempSekiz);
         }
         //------------------------------------------------------
         public string SekizTane_HarfOlustur()
@@ -46,7 +41,7 @@ namespace ConsoleWordMatch
         }
 
         //-------------------------------------------------------
-        public string BirTane_HarfOlustur()
+        string BirTane_HarfOlustur()
         {
             int diziBoyut = harfler.Length;
             int rastgeleIndeks = rastgele.Next(diziBoyut);

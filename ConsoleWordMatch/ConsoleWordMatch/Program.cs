@@ -11,13 +11,14 @@ namespace ConsoleWordMatch
         static void Main(string[] args)
         {
             RastgeleYapici rastgeleYapici = new RastgeleYapici();
-            //for (int i = 0; i < 8; i++)
-            //{
-            //    string[] harfler = rastgeleYapici.SekizTaneHarfOlustur();
-            //    rastgeleYapici.Yazdir(harfler);
-            //}
             var harfler = rastgeleYapici.HarfTane_AnlamsizKelimeOlustur();
-            rastgeleYapici.Yazdir(harfler);
+            //rastgeleYapici.Yazdir(harfler);
+
+            //---------------------------------------------------------------
+            Kombinasyon kombinasyon = new Kombinasyon();
+            var harf = harfler[0];
+            var sonucListesi = kombinasyon.HarfTane_AnlamsizKelimeOlustur(harf);
+            kombinasyon.Yazdir(sonucListesi);
             Console.Read();
         }
     }
