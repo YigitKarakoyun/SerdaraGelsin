@@ -14,22 +14,22 @@ namespace ConsoleWordMatch
             BasamakBasamak basamak = new BasamakBasamak();
 
             var yedi = basamak.YediAltiBesDortUcListesi(sekiz);
-            basamak.Yazdir(yedi);
+            //basamak.Yazdir(yedi);
 
             var alti = basamak.YediAltiBesDortUcListesi(yedi);
-            basamak.Yazdir(alti);
+            //basamak.Yazdir(alti);
 
             var bes = basamak.YediAltiBesDortUcListesi(alti);
-            basamak.Yazdir(bes);
+            //basamak.Yazdir(bes);
 
             var dort = basamak.YediAltiBesDortUcListesi(bes);
-            basamak.Yazdir(dort);
+            //basamak.Yazdir(dort);
 
             var uc = basamak.YediAltiBesDortUcListesi(dort);
-            basamak.Yazdir(uc);
+            //basamak.Yazdir(uc);
 
             var iki = basamak.YediAltiBesDortUcListesi(uc);
-            basamak.Yazdir(iki);
+            //basamak.Yazdir(iki);
 
             Jokerler jokerler = new Jokerler();
             //var sekizkombin = jokerler.Jokerli_AnlamsizKelimeOlustur(sekiz);

@@ -26,6 +26,7 @@ namespace ConsoleWordMatch
             {
                 foreach (var itemMetin in tempList)
                 {
+                     //sort
                     string yeniString = item + itemMetin;
                     temp.Add(yeniString);
                 }
