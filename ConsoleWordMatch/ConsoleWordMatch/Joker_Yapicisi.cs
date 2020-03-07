@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace ConsoleWordMatch
 {
 
-   public class Jokerler
+   public class Joker_Yapicisi
     {
         string[] harfler = Alfabe.harfler_dizisi;
 
@@ -26,13 +26,29 @@ namespace ConsoleWordMatch
             {
                 foreach (var itemMetin in tempList)
                 {
-                     //sort
-                    string yeniString = item + itemMetin;
+                    //sort
+                    var sirali = SiraliKelime(itemMetin);
+                    string yeniString = item + sirali;
                     temp.Add(yeniString);
                 }
 
             }
 
+            return temp;
+        }
+        private string SiraliKelime(string itemMetin)
+        {
+            List<string> sirali = new List<string>();
+            foreach (var item in itemMetin)
+            {
+                sirali.Add(item.ToString());
+            }
+            sirali.Sort();
+            var temp = "";
+            foreach (var item in sirali)
+            {
+                temp += item;
+            }
             return temp;
         }
         public void Yazdir(List<string> harflerList)

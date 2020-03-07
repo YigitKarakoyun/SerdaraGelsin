@@ -6,37 +6,10 @@ namespace ConsoleWordMatch
     {
         static void Main(string[] args)
         {
-            RastgeleYapici rastgeleYapici = new RastgeleYapici();
-            var sekiz = rastgeleYapici.SekizTane_HarfOlustur();
-            rastgeleYapici.Yazdir(sekiz);
+            Jokerli_Basamaklilar jokerBasamaklilar = new Jokerli_Basamaklilar();
+            jokerBasamaklilar.JokerKarakterlerleriniDoldur();
+            jokerBasamaklilar.Yazdir(jokerBasamaklilar.uc_basamaklilar);
 
-
-            BasamakBasamak basamak = new BasamakBasamak();
-
-            var yedi = basamak.YediAltiBesDortUcListesi(sekiz);
-            //basamak.Yazdir(yedi);
-
-            var alti = basamak.YediAltiBesDortUcListesi(yedi);
-            //basamak.Yazdir(alti);
-
-            var bes = basamak.YediAltiBesDortUcListesi(alti);
-            //basamak.Yazdir(bes);
-
-            var dort = basamak.YediAltiBesDortUcListesi(bes);
-            //basamak.Yazdir(dort);
-
-            var uc = basamak.YediAltiBesDortUcListesi(dort);
-            //basamak.Yazdir(uc);
-
-            var iki = basamak.YediAltiBesDortUcListesi(uc);
-            //basamak.Yazdir(iki);
-
-            Jokerler jokerler = new Jokerler();
-            //var sekizkombin = jokerler.Jokerli_AnlamsizKelimeOlustur(sekiz);
-            //jokerler.Yazdir(sekizkombin);
-
-            var temp = jokerler.Jokerli_AnlamsizKelimeOlustur(iki);
-            jokerler.Yazdir(temp);
             Console.Read();
         }
     }

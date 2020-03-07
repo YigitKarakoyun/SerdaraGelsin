@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleWordMatch
 {
-    class BasamakBasamak
+    class SekizdenKucuk_Basamak_Yapicisi
     {
         public List<string> YediAltiBesDortUcListesi(string tempSekiz)
         {

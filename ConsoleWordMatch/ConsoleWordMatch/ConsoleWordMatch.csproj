@@ -44,11 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alfabe.cs" />
-    <Compile Include="Jokerler.cs" />
+    <Compile Include="Jokersiz_Basamaklar.cs" />
+    <Compile Include="Jokerli_Basamaklilar.cs" />
+    <Compile Include="Joker_Yapicisi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RastgeleYapici.cs" />
-    <Compile Include="BasamakBasamak.cs" />
+    <Compile Include="SekizliBasamak_Yapici.cs" />
+    <Compile Include="SekizdenKucuk_Basamak_Yapicisi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

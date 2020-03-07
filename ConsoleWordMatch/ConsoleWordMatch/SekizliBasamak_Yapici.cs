@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleWordMatch
 {
-    public class RastgeleYapici
+    public class SekizliBasamak_Yapici
     {
         Random rastgele = new Random();
         string[] harfler = Alfabe.harfler_dizisi;
-        
-        
+
+
         //------------------------------------------------------
         public string SekizTane_HarfOlustur()
         {
@@ -29,32 +29,6 @@ namespace ConsoleWordMatch
             int diziBoyut = harfler.Length;
             int rastgeleIndeks = rastgele.Next(diziBoyut);
             return harfler[rastgeleIndeks];
-        }
-        //Yazdır sil
-        //------------------------------------------------------
-        public void Yazdir(string harfler)
-        {
-            Console.WriteLine("---Harfler---");
-            foreach (var item in harfler)
-            {
-                Console.Write(item);
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
-
-        }
-        public void Yazdir(string[] harflerList)
-        {
-            Console.WriteLine("---Harfler---");
-            foreach (var item in harflerList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
-
         }
     }
 }
