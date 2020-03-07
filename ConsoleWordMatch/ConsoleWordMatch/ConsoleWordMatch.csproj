@@ -44,9 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alfabe.cs" />
+    <Compile Include="IJokerliBasamaklar.cs" />
+    <Compile Include="Jokerli_Permutasyon.cs" />
     <Compile Include="Jokersiz_Basamaklar.cs" />
     <Compile Include="Jokerli_Basamaklilar.cs" />
     <Compile Include="Joker_Yapicisi.cs" />
+    <Compile Include="Permutasyon_Yapici.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SekizliBasamak_Yapici.cs" />
