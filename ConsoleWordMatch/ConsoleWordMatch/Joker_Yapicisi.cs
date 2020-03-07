@@ -14,8 +14,12 @@ namespace ConsoleWordMatch
             List<string> temp = new List<string>();
             foreach (string item in harfler)
             {
-                string yeniString = item + tempSekiz;
-                temp.Add(yeniString);
+                string yeniString =  SiraliKelime(item + tempSekiz);
+                if (!temp.Contains(yeniString))
+                {
+                    temp.Add(yeniString);
+                }
+                
             }
             return temp;
         }
@@ -26,10 +30,12 @@ namespace ConsoleWordMatch
             {
                 foreach (var itemMetin in tempList)
                 {
-                    //sort
-                    var sirali = SiraliKelime(itemMetin);
-                    string yeniString = item + sirali;
-                    temp.Add(yeniString);
+                    string yeniString = SiraliKelime(item + itemMetin);
+                    if (!temp.Contains(yeniString))
+                    {
+                        temp.Add(yeniString);
+                    }
+                    
                 }
 
             }
