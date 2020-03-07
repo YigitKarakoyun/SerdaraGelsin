@@ -22,6 +22,7 @@ namespace ConsoleWordMatch
                         tempString += tempSekiz[j].ToString();
                     }
                 }
+                
                 if (!temp.Contains(tempString))
                 {
                     temp.Add(tempString);
