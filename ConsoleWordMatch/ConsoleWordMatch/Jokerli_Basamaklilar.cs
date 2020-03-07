@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleWordMatch
 {
-    class Jokerli_Basamaklilar:IJokerliBasamaklar
+    class Jokerli_Basamaklilar
     {
         Jokersiz_Basamaklar basamaklar = new Jokersiz_Basamaklar();
         Joker_Yapicisi jokerler = new Joker_Yapicisi();

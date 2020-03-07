@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alfabe.cs" />
-    <Compile Include="IJokerliBasamaklar.cs" />
     <Compile Include="Jokerli_Permutasyon.cs" />
     <Compile Include="Jokersiz_Basamaklar.cs" />
     <Compile Include="Jokerli_Basamaklilar.cs" />
