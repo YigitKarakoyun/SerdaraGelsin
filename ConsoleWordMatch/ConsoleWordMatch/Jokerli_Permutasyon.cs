@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConsoleWordMatch
 {
     class Jokerli_Permutasyon
@@ -63,6 +64,7 @@ namespace ConsoleWordMatch
             Console.WriteLine("---Harfler---");
             foreach (var item in list)
             {
+                
                 Console.WriteLine(item);
             }
             Console.WriteLine();
